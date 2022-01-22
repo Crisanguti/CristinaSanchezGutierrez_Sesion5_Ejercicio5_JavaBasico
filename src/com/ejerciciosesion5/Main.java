@@ -2,7 +2,14 @@ package com.ejerciciosesion5;
 
 public class Main {
 
+    static CocheCRUD cocheCrud = new CocheCRUDImpl();
+
     public static void main(String[] args) {
-	// write your code here
+
+        cocheCrud.save();
+        cocheCrud.findAll();
+        cocheCrud.delete();
+
+
     }
 }
